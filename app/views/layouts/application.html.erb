@@ -7,9 +7,49 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
- 	   <p class="notice"><%= notice %></p>
+ 	 <p class="notice"><%= notice %></p>
      <p class="alert"><%= alert %></p>
 <%= yield %>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <%= link_to "Wiki", root_path, class: "navbar-brand" %>
+      <ul class="nav navbar-nav navbar-right">
+        <% if user_signed_in? %>
+          <li>
+            <%= link_to "New Article", new_article_path %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </nav>
+  <p class="notice">
+    <%= notice %>
+  </p>
+  <p class="alert">
+    <%= alert %>
+  </p>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <%= yield %>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-group">
+          <li>
+            <%= link_to "All Articles", root_path, class: "list-group-item" %>
+          </li>
+          <% Category.all.each do |category| %>
+            <li>
+              <%= link_to category.name, articles_path(category: category.name), class: "list-group-item" %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
 
 </body>
 </html>
