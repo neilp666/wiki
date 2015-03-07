@@ -16,6 +16,8 @@ gem 'devise'
 gem 'simple_form'
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem 'friendly_id'
+gem 'will_paginate', '~> 3.0.6'
+gem 'will_paginate-bootstrap'
 
 group :development do
   gem "better_errors"

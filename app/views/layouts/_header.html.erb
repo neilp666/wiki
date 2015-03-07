@@ -1,0 +1,12 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <%= link_to "Wiki", root_path, class: "navbar-brand" %>
+      <ul class="nav navbar-nav navbar-right">
+        <% if user_signed_in? %>
+          <li>
+            <%= link_to "New Article", new_article_path %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </nav>

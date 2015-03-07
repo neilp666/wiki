@@ -6,7 +6,10 @@
 		<p><%= truncate(article.content, length: 200) %>
 		<% end %>
 
-
 <% if user_signed_in? %>
 <%= link_to "New Article", new_article_path %>
 <% end %>
+
+<%= will_paginate @articles, renderer: BootstrapPagination::Rails %>
+
+
