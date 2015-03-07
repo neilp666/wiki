@@ -1,4 +1,10 @@
-<h1><%= @article.title %></h1>
-<h1><%= @article.content %></h1>
+<h2>Description of article</h2>
+
+<h3><%= @article.title %></h3>
+<h4><%= @article.content %></h4>
+
+<%= image_tag @article.cover.url if @article.cover? %>
+
+
 
 <%= link_to "back", root_path %>

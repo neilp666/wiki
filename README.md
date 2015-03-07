@@ -8,4 +8,6 @@ Better errors
 
 will_paginate
 
+will_paginate Bootstrap
+
 annotate

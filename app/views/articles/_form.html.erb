@@ -1,6 +1,10 @@
 <%= simple_form_for @article do |f| %>
 	<%= f.collection_select :category_id, Category.all, :id, :name, { promt: "Choose a Category" } %>
 	<%= f.input :title %>
-	<%= f.input :content %>
-	<%= f.submit %>
+	<%= f.input :content %></br>
+	<%= f.file_field :cover %>
+
+	<div class="actions">
+	<%= f.submit class: "btn btn-primary" %>
+	</div>
 <% end %>
