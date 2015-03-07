@@ -22,4 +22,5 @@ gem 'will_paginate-bootstrap'
 group :development do
   gem "better_errors"
   gem 'binding_of_caller', '~> 0.7.2'
+  gem 'annotate', '~> 2.6.5'
 end
