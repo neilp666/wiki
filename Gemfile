@@ -15,4 +15,4 @@ gem 'spring',        group: :development
 gem 'devise'
 gem 'simple_form'
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
-
+gem 'friendly_id'
