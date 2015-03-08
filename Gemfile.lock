@@ -72,6 +72,7 @@ GEM
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
     erubis (2.7.0)
+    excon (0.44.4)
     execjs (2.3.0)
     friendly_id (5.1.0)
       activerecord (>= 4.0.0)
@@ -91,6 +92,9 @@ GEM
       less (~> 2.6.0)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
+    mandrill-api (1.0.53)
+      excon (>= 0.16.0, < 1.0)
+      json (>= 1.7.7, < 2.0)
     mime-types (2.4.3)
     minitest (5.5.1)
     multi_json (1.11.0)
@@ -170,6 +174,7 @@ DEPENDENCIES
   friendly_id
   jbuilder (~> 2.0)
   jquery-rails
+  mandrill-api (~> 1.0.53)
   rails (= 4.1.7)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)

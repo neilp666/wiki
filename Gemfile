@@ -19,6 +19,7 @@ gem 'friendly_id'
 gem 'will_paginate', '~> 3.0.6'
 gem 'will_paginate-bootstrap'
 gem 'carrierwave'
+gem 'mandrill-api', '~> 1.0.53'
 
 group :development do
   gem "better_errors"

@@ -11,3 +11,7 @@ will_paginate
 will_paginate Bootstrap
 
 annotate
+
+carrierwave
+
+mandrill app - transactional emails
