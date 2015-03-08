@@ -15,3 +15,5 @@ annotate
 carrierwave
 
 mandrill app - transactional emails
+
+font awesome  / jquery 
